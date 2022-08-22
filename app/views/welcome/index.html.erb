@@ -1,0 +1,7 @@
+<h1>Welcome#index</h1>
+<p>Find me in app/views/welcome/index.html.erb</p>
+<% byebug %>
+<% if  user_signed_in? %>
+ <p>Get ready to offer your services</p>
+ <%= link_to 'Log out', destroy_user_session_path, method: :delete %>
+<% end %>
